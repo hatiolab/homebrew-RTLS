@@ -6,7 +6,9 @@ class Nrf5xCli < Formula
   sha256 "38a0c489777fbd633bd76710730a563058f17b94a8d5c7360c68c4aeda3be29e"
 
   def install
-    bin.install 'mergehex/mergehex'
-    bin.install 'nrfjprog/nrfjprog'
+    prefix.install Dir["*"]
+    # prefix.install Dir["mergehex/*", "nrfjprog/*"]
+    # bin.install 'mergehex/mergehex'
+    # bin.install 'nrfjprog/nrfjprog'
   end
 end
