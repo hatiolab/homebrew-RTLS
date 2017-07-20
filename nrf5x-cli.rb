@@ -7,7 +7,7 @@ class Nrf5xCli < Formula
 
   def install
     prefix.install Dir["*"]
-    lib.install "nrfjprog/*.dylib"
+    lib.install Dir["nrfjprog/*.dylib"]
     bin.install "mergehex/mergehex"
     bin.install "nrfjprog/nrfjprog"
   end
