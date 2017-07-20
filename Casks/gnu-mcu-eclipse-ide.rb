@@ -7,5 +7,5 @@ cask 'gnu-mcu-eclipse-ide' do
 
   depends_on macos: '>= :leopard'
 
-  app 'Eclipse MCU.app'
+  app "Eclipse.app", target: "Eclipse MCU.app"
 end
