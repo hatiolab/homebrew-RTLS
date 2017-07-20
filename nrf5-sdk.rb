@@ -9,8 +9,6 @@ class Nrf5Sdk < Formula
   sha256 "1d50486af79ab82f02041be8e4a2682143c8cc8af4e9b092e6c6b11d24b74d54"
   version "13.1.0"
 
-  # depends_on "cmake" => :build
-
   def install
     prefix.install Dir["*"]
   end
