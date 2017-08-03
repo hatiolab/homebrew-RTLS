@@ -56,8 +56,7 @@ $ brew install nrf5x-cli
 ```
 $ brew install nrf5-sdk
 ```
-* post install
-  - 설치후에는 /usr/local/opt/nrf5-sdk/components/toolchain/gcc/Makefile.posix 의 내용을 수정한다.
+  - 설치 과정에서 /usr/local/opt/nrf5-sdk/components/toolchain/gcc/Makefile.posix 의 내용이 자동 수정된다.
 ```
 GNU_INSTALL_ROOT := /usr/local
 GNU_VERSION := 6.3.1
@@ -95,4 +94,5 @@ GNU_PREFIX := arm-none-eabi
   
   * Apply 버튼, Debug 버튼.
 * 참고자료
+  * [The complete nRF52 Mac development tutorial](http://www.novelbits.io/nrf52-mac-development-tutorial/)
   * [Discover Nordic Semi nRF52832 with Eclipse](https://www.disk91.com/2017/technology/hardware/discover-nordic-semi-nrf52832/)
