@@ -8,9 +8,9 @@ class Nrf5Sdk < Formula
   def install
     prefix.install Dir["*"]
 
-    inreplace "/usr/local/opt/nrf5-sdk/components/toolchain/gcc/Makefile.posix" do |s|
-      s.gsub! "GNU_INSTALL_ROOT := /usr/local/gcc-arm-none-eabi-4_9-2015q3", "GNU_INSTALL_ROOT := /usr/local"
-      s.gsub! "GNU_VERSION := 4.9.3", "GNU_VERSION := 6.3.1"
-    end
+    # inreplace "/usr/local/opt/nrf5-sdk/components/toolchain/gcc/Makefile.posix" do |s|
+    #   s.gsub! "GNU_INSTALL_ROOT := /usr/local/gcc-arm-none-eabi-4_9-2015q3", "GNU_INSTALL_ROOT := /usr/local"
+    #   s.gsub! "GNU_VERSION := 4.9.3", "GNU_VERSION := 6.3.1"
+    # end
   end
 end
